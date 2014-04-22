@@ -1,0 +1,17 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Larry, Curly, Moe</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body x-ng-app="" x-ng-Controller="TicTacToeController">
+  <div class="header">
+    <h1>Larry, Curly & Moe!</h1>
+  </div>
+  <div class="container">
+    <div x-ng-class="{cells: true, xBackground: c=='X'}" x-ng-repeat="c in cells track by $index" x-ng-click="click($index)">{{ c }}</div>
+  </div>
+</body>
+</html>
