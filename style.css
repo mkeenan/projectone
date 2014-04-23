@@ -1,22 +1,40 @@
+
+
 .container {
-  width: 475px;
-  height: 475px;
+  width: 400px;
+  height: 450px;
   padding: 40px;
-  border: 5px solid black;
+  border-radius: 40px;
+  background-color: #FFAB00;
+  box-shadow: 3px 3px 10px grey;
   margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Sigmar+One';
+  font-size: 26px;
 }
 
 .cells {
-  width: 150px;
-  height: 150px;
-  background-color: white;
-  border: 3px solid red;
+  width: 125px;
+  height: 125px;
+  padding-bottom: 10px;
+  border-radius: 30px;
+  background-size: 150px;
+  border: 4px solid;
+  border-color: #6A48D7;
+  text-align: center;
+  font-size: 75px;
+  font-family:Bangers 15px;
   float: left;
-  color: black;
-  margin: 0 auto;
+}
+
+xBackground div {
+
+
 }
 
 .header {
-  height: 100px;
+  height: 50px;
   text-align: center;
 }

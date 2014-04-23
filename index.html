@@ -5,13 +5,38 @@
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
   <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Sigmar+One|Fontdiner+Swanky' rel='stylesheet' type='text/css'>
 </head>
 <body x-ng-app="" x-ng-Controller="TicTacToeController">
   <div class="header">
-    <h1>Larry, Curly & Moe!</h1>
+    <h1>Larry, Curly, Moe!</h1>
   </div>
+
+  <!-- creating the container to hold the board -->
   <div class="container">
-    <div x-ng-class="{cells: true, xBackground: c=='X'}" x-ng-repeat="c in cells track by $index" x-ng-click="click($index)">{{ c }}</div>
+    <div x-ng-class="{cells: true, xBackground: c=='X', yBackground: c=='O'}" x-ng-repeat="c in cells track by $index" x-ng-click="click($index)">{{ c }}
+    </div>
+
   </div>
+ </div>
 </body>
 </html>
+
+<!-- ------------------------- -->
+
+
+
+
+
+
+  <!-- insert audio player from Kiwi6: http://kiwi6.com/file/cd0l8ou3px -->
+<!--   <object type="application/x-shockwave-flash" data="http://kiwi6.com/swf/audio-player.swf?audioUrl=http://k003.kiwi6.com/hotlink/cd0l8ou3px/Three_Stooges_-_Swingin_the_Alphabet.mp3" id="audioplayer" height="27" width="400" allowscriptaccess="always">
+    <param name="movie" value="http://kiwi6.com/swf/audio-player.swf?audioUrl=http://k003.kiwi6.com/hotlink/cd0l8ou3px/Three_Stooges_-_Swingin_the_Alphabet.mp3" />
+    <param name="FlashVars" value="" />
+    <param name="quality" value="high" />
+    <param name="menu" value="false" />
+    <param name="allowscriptaccess" value="always" />
+    <param name="wmode" value="transparent" /></object>
+  <div style="font:10px Arial,sans-serif;color:#aaa">Hosted by
+    <a style="color:#999" href="http://kiwi6.com">Kiwi6 file hosting</a>. -->
+<!--     <a style="color:#999" href="http://kiwi6.com/file/cd0l8ou3px">Download mp3</a> - <a href="http://kiwi6.com">Free Music Hosting</a>. -->
