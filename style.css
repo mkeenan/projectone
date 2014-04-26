@@ -1,40 +1,103 @@
 
-
-.container {
-  width: 400px;
-  height: 450px;
-  padding: 40px;
-  border-radius: 40px;
-  background-color: #FFAB00;
-  box-shadow: 3px 3px 10px grey;
-  margin: 0 auto;
-}
-
-h1 {
-  font-family: 'Sigmar+One';
-  font-size: 26px;
-}
-
-.cells {
-  width: 125px;
-  height: 125px;
-  padding-bottom: 10px;
-  border-radius: 30px;
-  background-size: 150px;
-  border: 4px solid;
-  border-color: #6A48D7;
-  text-align: center;
-  font-size: 75px;
-  font-family:Bangers 15px;
-  float: left;
-}
-
-xBackground div {
-
-
-}
-
 .header {
+  margin-bottom: 70px;
   height: 50px;
   text-align: center;
 }
+
+body {
+  background-image: url("img/vintage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-family: 'Sigmar One';
+  font-size: 50px;
+}
+
+.audio {
+  width: 300px;
+  padding: 25px 20px 10px 20px;
+  margin: 0 auto;
+}
+
+.cells {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  border: 3px solid;
+  border-color: gray;
+  font-size: 50px;
+  font-family: 'Sigmar One';
+  float: left;
+}
+
+.filmstrip{
+  width: 1076px;
+  height: 350px;
+  background-image: url("img/threeframe_edited.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 0px;
+}
+
+.board {
+ height: 250px;
+ width: 250px;
+ float: left;
+ margin: 60px 10px 10px 40px;
+}
+
+.rightSide{
+  width: 250px;
+  height: 250px;
+  font-size: 12px;
+  font-family: 'Sigmar One';
+  float: left;
+  margin: 60px 0px 10px 729px;
+  position: fixed;
+  }
+
+.leftSide{
+/*  width: 280px;
+  height:150px;*/
+  font-size: 12px;
+  font-family: 'Sigmar One';
+  float: left;
+  margin: 61px 30px 10px 10px;
+
+}
+
+
+
+.xBackground {
+  background-image: url("img/Larry.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.yBackground {
+  background-image: url("img/Curly.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*notes/extra code-----------------
+
+http://l.rgbimg.com/cache1nGhPw/users/h/hi/hisks/600/mhY3zKw.jpg
+/*https://c2.staticflickr.com/6/5204/5261239318_c38d1e4e92_z.jpg*/
+/*http://ak5.picdn.net/shutterstock/videos/2440823/preview/stock-footage-movie-film-vintage-design-old-trailer.jpg*/
+
+
+/*.knob {
+  width: 100px;
+  height: 100px;
+  border: dashed 2px;
+  font-family: 'Sigmar One';
+  background-image: url("img/tvknob.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right;
+  z-index: 1;
+}*/

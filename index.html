@@ -3,29 +3,48 @@
   <meta charset="UTF-8">
   <title>Larry, Curly, Moe</title>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+  <script src="https://cdn.firebase.com/v0/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/0.6.0/angularfire.min.js"></script>
   <script src="script.js"></script>
   <link rel="stylesheet" href="style.css">
-  <link href='http://fonts.googleapis.com/css?family=Sigmar+One|Fontdiner+Swanky' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
 </head>
-<body x-ng-app="" x-ng-Controller="TicTacToeController">
+<body x-ng-app="TTTApp" x-ng-Controller="TicTacToeController">
+
   <div class="header">
-    <h1>Larry, Curly, Moe!</h1>
+    <h1>Larry, Curly, MOE!</h1>
   </div>
 
-  <!-- creating the container to hold the board -->
-  <div class="container">
-    <div x-ng-class="{cells: true, xBackground: c=='X', yBackground: c=='O'}" x-ng-repeat="c in cells track by $index" x-ng-click="click($index)">{{ c }}
+<!-- gameboard -->
+  <div class="filmstrip">
+
+    <div class="leftside">
+      <iframe src="https://giphy.com/embed/iuePp8iwQ211e" width="343" height="230" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
     </div>
-
+    <div class="board">
+        <div x-ng-class="{cells: true, xBackground: c==1, yBackground: c==-1}" x-ng-repeat="c in game.cells track by $index" x-ng-click="click($index)">{{ convert(c) }}</div>
+    </div>
+    <div class="rightside">
+        <iframe src="https://giphy.com/embed/OOHcI9Us7aO4w" width="340" height="230" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    </div>
+</div>
+<!-- insert audio player & borrow music from www.kiwi6.com-->
+  <div class="audio">
+    <audio controls autoplay loop>
+      <source src="http://k003.kiwi6.com/hotlink/cd0l8ou3px/Three_Stooges_-_Swingin_the_Alphabet.mp3" type="audio/mpeg">
+    </audio>
   </div>
- </div>
+
 </body>
 </html>
 
-<!-- ------------------------- -->
 
 
+<!--Comments/Notes/Bugs/Test Code-->
 
+<!--     <div class="knob">
+    </div> -->
 
 
 
