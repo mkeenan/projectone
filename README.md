@@ -1,4 +1,4 @@
-== README
+#README
 
 Larry, Curly, Moe is a simple variation of Tic Tac Toe and is designed for two-player use.
 
