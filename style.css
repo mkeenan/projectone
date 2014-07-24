@@ -39,7 +39,7 @@ h1 {
   background-image: url("img/threeframe_edited.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 0px;
+  margin: 0 auto;
 }
 
 .board {
@@ -50,8 +50,6 @@ h1 {
 }
 
 .rightSide{
-  width: 250px;
-  height: 250px;
   font-size: 12px;
   font-family: 'Sigmar One';
   float: left;
@@ -60,8 +58,6 @@ h1 {
   }
 
 .leftSide{
-/*  width: 280px;
-  height:150px;*/
   font-size: 12px;
   font-family: 'Sigmar One';
   float: left;

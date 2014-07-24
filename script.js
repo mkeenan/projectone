@@ -108,7 +108,7 @@ function TicTacToeController($scope, $firebase) {
           var sum = $scope.win[i][0] + $scope.win[i][1] + $scope.win[i][2];
           if (sum == 3 || sum == -3) {
             $scope.$apply();
-            alert("you win!");
+            alert("You Win!");
             $scope.game.cells=[0,0,0,0,0,0,0,0,0];
             break;
           }
